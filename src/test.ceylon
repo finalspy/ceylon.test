@@ -10,5 +10,9 @@ void hello() {
    }else{
         print("faux");
    }
-   
+ 
+    // test integer type
+   Integer deux = +2;
+   print("test=" deux.string "");
+ 
 }
