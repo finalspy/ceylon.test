@@ -1,30 +1,20 @@
 doc "foobarqix method"
 void foobarqix() { 
-   Natural[] count = 1..100;
-   for(Natural n in count){
-        variable String c := "";
+   for(Natural n in 1..100){
+        variable String s := "";
         if(n%3==0){
-            c+="Foo";
+            s+="3";
         }
         if(n%5==0){
-            c+="Bar";
+            s+="5";
         }
         if(n%7==0){
-            c+="Qix";
+            s+="7";
         }
-        print(c);
-        /*if(c.size > 0){
-            print(c);
-        }else{
-            print(n);   
-        }
-        
-        if(n.string.containsAny(3,5,7)){
-            print("* " + c + n.string);
-        }else{
-            print("# " + n.string);
-        }*/
-    } 
+        s+=n.string;
+        // Bug ? string.size return the number of characters minus one
+        print("bug : " + s + " size is " + s.size.string);
+    }
 }
 
 
