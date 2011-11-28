@@ -1,28 +1,30 @@
-
-void hello() { 
-   // test standard output with string
-   String hello = "Hello World!";
-   print(hello);
-   
-   // test if/else statement and string.equals
-   if(hello.equals("Hello World!"))
-   {
-        print("vrai");
-   }else{
-        print("faux");
-   }
- 
-    // test integer type
-   Integer deux = +2;
-   print("test=" deux.string "");
-   
-   // test for statement
-   for(i in 1..100){
-        if(i%3==0){
-            print("Foo");
-        }else{
-            print(i);
+doc "foobarqix method"
+void foobarqix() { 
+   Natural[] count = 1..100;
+   for(Natural n in count){
+        variable String c := "";
+        if(n%3==0){
+            c+="Foo";
         }
-    }
- 
+        if(n%5==0){
+            c+="Bar";
+        }
+        if(n%7==0){
+            c+="Qix";
+        }
+        print(c);
+        /*if(c.size > 0){
+            print(c);
+        }else{
+            print(n);   
+        }
+        
+        if(n.string.containsAny(3,5,7)){
+            print("* " + c + n.string);
+        }else{
+            print("# " + n.string);
+        }*/
+    } 
 }
+
+
